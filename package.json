@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "v6.6.0",
+    "node": "v8.8.1",
     "npm": "3.10.3"
   },
   "scripts": {
@@ -14,6 +14,7 @@
   "author": "Unknown",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "4.16.2",
     "mocha": "5.0.1"
   }
