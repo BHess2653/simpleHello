@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/webhook', (req, res) => {
-  const { state, creator, repository_url, environment, } = req.body.deployment;
-  console.log(`${state}, ${creator.login}, ${repository_url}, ${environment}`);
+  const { creator, repository_url, environment } = req.body.deployment;
+  console.log(`${creator.login}, ${repository_url}, ${environment}`);
   res.send('GOT IT');
 });
 
